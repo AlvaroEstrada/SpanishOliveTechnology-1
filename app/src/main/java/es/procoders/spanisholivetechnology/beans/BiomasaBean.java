@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @since API 21
  * @version 1.0
  */
-public class BiomasaBean implements Serializable {
+public class BiomasaBean extends Formulario implements Serializable {
 
     //Propiedades
     private String answerQ1;
