@@ -6,10 +6,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.TextView;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Objects;
-
 import es.procoders.spanisholivetechnology.R;
 import es.procoders.spanisholivetechnology.beans.BiomasaBean;
 
@@ -91,36 +87,36 @@ public class ResultActivity extends AppCompatActivity {
          * Este método comprueba que los campos de respuesta están llenos, recoge la información
          * contenida y la vuelca en el documento de respuesta
          */
-        if (!TextUtils.isEmpty(bio.getBioQ1())) {
-            res1.setText(bio.getBioQ1());
+        if (!TextUtils.isEmpty(bio.getAnswerQ1())) {
+            res1.setText(bio.getAnswerQ1());
         }
 
-        if (!TextUtils.isEmpty(bio.getBioQ2())) {
-            res2.setText(bio.getBioQ2());
+        if (!TextUtils.isEmpty(bio.getAnswerQ2())) {
+            res2.setText(bio.getAnswerQ2());
         }
 
-        if (!TextUtils.isEmpty(bio.getBioQ3())) {
-            res3.setText(bio.getBioQ3());
+        if (!TextUtils.isEmpty(bio.getAnswerQ3())) {
+            res3.setText(bio.getAnswerQ3());
         }
 
-        if (!TextUtils.isEmpty(bio.getBioQ4())) {
-            res4.setText(bio.getBioQ4());
+        if (!TextUtils.isEmpty(bio.getAnswerQ4())) {
+            res4.setText(bio.getAnswerQ4());
         }
 
-        if (!TextUtils.isEmpty(bio.getBioQ5().toString())) {
-            res5.setText(bio.getBioQ5().toString());
+        if (!TextUtils.isEmpty(bio.getAnswerQ5().toString())) {
+            res5.setText(bio.getAnswerQ5().toString());
         }
 
-        if (!TextUtils.isEmpty(bio.getBioQ6())) {
-            res6.setText(bio.getBioQ6());
+        if (!TextUtils.isEmpty(bio.getAnswerQ6())) {
+            res6.setText(bio.getAnswerQ6());
         }
 
-        if (!TextUtils.isEmpty(bio.getBioQ7())) {
-            res7.setText(bio.getBioQ7());
+        if (!TextUtils.isEmpty(bio.getAnswerQ7())) {
+            res7.setText(bio.getAnswerQ7());
         }
 
-        if (!TextUtils.isEmpty(bio.getBioQ8())) {
-            res8.setText(bio.getBioQ8());
+        if (!TextUtils.isEmpty(bio.getAnswerQ8())) {
+            res8.setText(bio.getAnswerQ8());
         }
 
     }

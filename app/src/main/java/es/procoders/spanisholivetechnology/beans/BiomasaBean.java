@@ -10,14 +10,14 @@ import java.io.Serializable;
 public class BiomasaBean implements Serializable {
 
     //Propiedades
-    private String bioQ1;
-    private String bioQ2;
-    private String bioQ3;
-    private String bioQ4;
-    private Float bioQ5 = -1F;
-    private String bioQ6;
-    private String bioQ7;
-    private String bioQ8;
+    private String answerQ1;
+    private String answerQ2;
+    private String answerQ3;
+    private String answerQ4;
+    private Float answerQ5 = -1F;
+    private String answerQ6;
+    private String answerQ7;
+    private String answerQ8;
 
     /**
      * Se declaran las variables que representan a las diferentes preguntas del apartado biomasa
@@ -30,65 +30,64 @@ public class BiomasaBean implements Serializable {
     }
 
     //Getters & Setters
-    public String getBioQ1() {
-        return bioQ1;
+    public String getAnswerQ1() {
+        return answerQ1;
     }
 
-    public void setBioQ1(String bioQ1) {
-        this.bioQ1 = bioQ1;
+    public void setAnswerQ1(String answerQ1) {
+        this.answerQ1 = answerQ1;
     }
 
-    public String getBioQ2() {
-        return bioQ2;
+    public String getAnswerQ2() {
+        return answerQ2;
     }
 
-    public void setBioQ2(String bioQ2) {
-        this.bioQ2 = bioQ2;
+    public void setAnswerQ2(String answerQ2) {
+        this.answerQ2 = answerQ2;
     }
 
-    public String getBioQ3() {
-        return bioQ3;
+    public String getAnswerQ3() {
+        return answerQ3;
     }
 
-    public void setBioQ3(String bioQ3) {
-        this.bioQ3 = bioQ3;
+    public void setAnswerQ3(String answerQ3) {
+        this.answerQ3 = answerQ3;
     }
 
-    public String getBioQ4() {
-        return bioQ4;
-
+    public String getAnswerQ4() {
+        return answerQ4;
     }
 
-    public void setBioQ4(String bioQ4) {
-        this.bioQ4 = bioQ4;
+    public void setAnswerQ4(String answerQ4) {
+        this.answerQ4 = answerQ4;
     }
 
-    public Float getBioQ5() {return bioQ5;}
+    public Float getAnswerQ5() {return answerQ5;}
 
-    public void setBioQ5(Float bioQ5) {this.bioQ5 = bioQ5;}
+    public void setAnswerQ5(Float answerQ5) {this.answerQ5 = answerQ5;}
 
-    public String getBioQ6() {
-        return bioQ6;
+    public String getAnswerQ6() {
+        return answerQ6;
     }
 
-    public void setBioQ6(String bioQ6) {
-        this.bioQ6 = bioQ6;
+    public void setAnswerQ6(String answerQ6) {
+        this.answerQ6 = answerQ6;
     }
 
-    public String getBioQ7() {
-        return bioQ7;
+    public String getAnswerQ7() {
+        return answerQ7;
     }
 
-    public void setBioQ7(String bioQ7) {
-        this.bioQ7 = bioQ7;
+    public void setAnswerQ7(String answerQ7) {
+        this.answerQ7 = answerQ7;
     }
 
-    public String getBioQ8() {
-        return bioQ8;
+    public String getAnswerQ8() {
+        return answerQ8;
     }
 
-    public void setBioQ8(String bioQ8) {
-        this.bioQ8 = bioQ8;
+    public void setAnswerQ8(String answerQ8) {
+        this.answerQ8 = answerQ8;
     }
 
     //Equals
@@ -100,26 +99,26 @@ public class BiomasaBean implements Serializable {
 
         BiomasaBean that = (BiomasaBean) o;
 
-        if (bioQ1 != null ? !bioQ1.equals(that.bioQ1) : that.bioQ1 != null) return false;
-        if (bioQ2 != null ? !bioQ2.equals(that.bioQ2) : that.bioQ2 != null) return false;
-        if (bioQ3 != null ? !bioQ3.equals(that.bioQ3) : that.bioQ3 != null) return false;
-        if (bioQ4 != null ? !bioQ4.equals(that.bioQ4) : that.bioQ4 != null) return false;
-        if (bioQ5 != null ? !bioQ5.equals(that.bioQ5) : that.bioQ5 != null) return false;
-        if (bioQ6 != null ? !bioQ6.equals(that.bioQ6) : that.bioQ6 != null) return false;
-        if (bioQ7 != null ? !bioQ7.equals(that.bioQ7) : that.bioQ7 != null) return false;
-        return bioQ8 != null ? bioQ8.equals(that.bioQ8) : that.bioQ8 == null;
+        if (answerQ1 != null ? !answerQ1.equals(that.answerQ1) : that.answerQ1 != null) return false;
+        if (answerQ2 != null ? !answerQ2.equals(that.answerQ2) : that.answerQ2 != null) return false;
+        if (answerQ3 != null ? !answerQ3.equals(that.answerQ3) : that.answerQ3 != null) return false;
+        if (answerQ4 != null ? !answerQ4.equals(that.answerQ4) : that.answerQ4 != null) return false;
+        if (answerQ5 != null ? !answerQ5.equals(that.answerQ5) : that.answerQ5 != null) return false;
+        if (answerQ6 != null ? !answerQ6.equals(that.answerQ6) : that.answerQ6 != null) return false;
+        if (answerQ7 != null ? !answerQ7.equals(that.answerQ7) : that.answerQ7 != null) return false;
+        return answerQ8 != null ? answerQ8.equals(that.answerQ8) : that.answerQ8 == null;
     }
 
     @Override
     public int hashCode() {
-        int result = bioQ1 != null ? bioQ1.hashCode() : 0;
-        result = 31 * result + (bioQ2 != null ? bioQ2.hashCode() : 0);
-        result = 31 * result + (bioQ3 != null ? bioQ3.hashCode() : 0);
-        result = 31 * result + (bioQ4 != null ? bioQ4.hashCode() : 0);
-        result = 31 * result + (bioQ5 != null ? bioQ5.hashCode() : 0);
-        result = 31 * result + (bioQ6 != null ? bioQ6.hashCode() : 0);
-        result = 31 * result + (bioQ7 != null ? bioQ7.hashCode() : 0);
-        result = 31 * result + (bioQ8 != null ? bioQ8.hashCode() : 0);
+        int result = answerQ1 != null ? answerQ1.hashCode() : 0;
+        result = 31 * result + (answerQ2 != null ? answerQ2.hashCode() : 0);
+        result = 31 * result + (answerQ3 != null ? answerQ3.hashCode() : 0);
+        result = 31 * result + (answerQ4 != null ? answerQ4.hashCode() : 0);
+        result = 31 * result + (answerQ5 != null ? answerQ5.hashCode() : 0);
+        result = 31 * result + (answerQ6 != null ? answerQ6.hashCode() : 0);
+        result = 31 * result + (answerQ7 != null ? answerQ7.hashCode() : 0);
+        result = 31 * result + (answerQ8 != null ? answerQ8.hashCode() : 0);
         return result;
     }
 }

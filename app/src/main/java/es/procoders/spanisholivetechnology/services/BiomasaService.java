@@ -1,10 +1,5 @@
 package es.procoders.spanisholivetechnology.services;
 
-import android.text.TextUtils;
-
-import java.util.Objects;
-
-import es.procoders.spanisholivetechnology.activities.BiomasaActivity;
 import es.procoders.spanisholivetechnology.beans.BiomasaBean;
 
 /**
@@ -36,13 +31,13 @@ public class BiomasaService {
 
         Boolean retVal = false;
 
-        if (datosBio.getBioQ2() == null){
+        if (datosBio.getAnswerQ2() == null){
             retVal = false;
-        } else if (datosBio.getBioQ3() == null){
+        } else if (datosBio.getAnswerQ3() == null){
             retVal = false;
-        } else if (datosBio.getBioQ5() == null){
+        } else if (datosBio.getAnswerQ5() == null){
             retVal = false;
-        } else if (datosBio.getBioQ6() == null){
+        } else if (datosBio.getAnswerQ6() == null){
             retVal = false;
         }else {
             retVal = true;

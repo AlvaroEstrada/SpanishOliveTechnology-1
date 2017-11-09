@@ -1,24 +1,14 @@
 package es.procoders.spanisholivetechnology.fragments;
 
 
-import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.text.Layout;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -98,68 +88,68 @@ public class BiomasaFragmentDetails extends android.support.v4.app.Fragment impl
 
         switch (controller.getPosition()) {
             case 0:
-                if(!TextUtils.isEmpty(bio.getBioQ1())) {
-                    if (bio.getBioQ1().equals(det1opcion1.getText().toString())) {
+                if(!TextUtils.isEmpty(bio.getAnswerQ1())) {
+                    if (bio.getAnswerQ1().equals(det1opcion1.getText().toString())) {
                         det1opcion1.setChecked(true);
-                    } else if (bio.getBioQ1().equals(det1opcion2.getText().toString())) {
+                    } else if (bio.getAnswerQ1().equals(det1opcion2.getText().toString())) {
                         det1opcion2.setChecked(true);
                     }
                 }
                 break;
 
             case 1:
-                if(!TextUtils.isEmpty(bio.getBioQ2())) {
-                    if (bio.getBioQ2().equals(det2opcion1.getText().toString())) {
+                if(!TextUtils.isEmpty(bio.getAnswerQ2())) {
+                    if (bio.getAnswerQ2().equals(det2opcion1.getText().toString())) {
                         det2opcion1.setChecked(true);
-                    } else if (bio.getBioQ2().equals(det2opcion2.getText().toString())) {
+                    } else if (bio.getAnswerQ2().equals(det2opcion2.getText().toString())) {
                         det2opcion2.setChecked(true);
-                    } else if (bio.getBioQ2().equals(det2opcion3.getText().toString())) {
+                    } else if (bio.getAnswerQ2().equals(det2opcion3.getText().toString())) {
                         det2opcion3.setChecked(true);
                     }
                 }
                 break;
             case 2:
-                if(!TextUtils.isEmpty(bio.getBioQ3())) {
-                    if (bio.getBioQ3().equals(det3opcion1.getText().toString())) {
+                if(!TextUtils.isEmpty(bio.getAnswerQ3())) {
+                    if (bio.getAnswerQ3().equals(det3opcion1.getText().toString())) {
                         det3opcion1.setChecked(true);
-                    } else if (bio.getBioQ3().equals(det3opcion2.getText().toString())) {
+                    } else if (bio.getAnswerQ3().equals(det3opcion2.getText().toString())) {
                         det3opcion2.setChecked(true);
-                    } else if (bio.getBioQ3().equals(det3opcion3.getText().toString())) {
+                    } else if (bio.getAnswerQ3().equals(det3opcion3.getText().toString())) {
                         det3opcion3.setChecked(true);
                     }
                 }
                 break;
 
             case 3:
-                if(!TextUtils.isEmpty(bio.getBioQ4())) {
-                    if (bio.getBioQ4().equals(det4opcion1.getText().toString())) {
+                if(!TextUtils.isEmpty(bio.getAnswerQ4())) {
+                    if (bio.getAnswerQ4().equals(det4opcion1.getText().toString())) {
                         det4opcion1.setChecked(true);
-                    } else if (bio.getBioQ4().equals(det4opcion2.getText().toString())) {
+                    } else if (bio.getAnswerQ4().equals(det4opcion2.getText().toString())) {
                         det4opcion2.setChecked(true);
                     }
                 }
                 break;
             case 4:
-                if(bio.getBioQ5()>=0) edtDetails5.setText(bio.getBioQ5().toString());
+                if(bio.getAnswerQ5()>=0) edtDetails5.setText(bio.getAnswerQ5().toString());
 
                 break;
             case 5:
-                if(!TextUtils.isEmpty(bio.getBioQ6())) {
-                    edtDetails6.setText(bio.getBioQ6());
+                if(!TextUtils.isEmpty(bio.getAnswerQ6())) {
+                    edtDetails6.setText(bio.getAnswerQ6());
                 }
                 break;
             case 6:
-                if(!TextUtils.isEmpty(bio.getBioQ6())) {
-                    if (bio.getBioQ6().equals(det7opcion1.getText().toString())) {
+                if(!TextUtils.isEmpty(bio.getAnswerQ6())) {
+                    if (bio.getAnswerQ6().equals(det7opcion1.getText().toString())) {
                         det7opcion1.setChecked(true);
-                    } else if (bio.getBioQ6().equals(det7opcion2.getText().toString())) {
+                    } else if (bio.getAnswerQ6().equals(det7opcion2.getText().toString())) {
                         det7opcion2.setChecked(true);
                     }
                 }
                 break;
             case 7:
-                if(!TextUtils.isEmpty(bio.getBioQ8())) {
-                    edtDetails8.setText(bio.getBioQ8());
+                if(!TextUtils.isEmpty(bio.getAnswerQ8())) {
+                    edtDetails8.setText(bio.getAnswerQ8());
                 }
                 break;
         }
@@ -175,72 +165,72 @@ public class BiomasaFragmentDetails extends android.support.v4.app.Fragment impl
                 switch (controller.getPosition()) {
                     case 0:
                         if(det1opcion1.isChecked()){
-                            bio.setBioQ1(det1opcion1.getText().toString());
+                            bio.setAnswerQ1(det1opcion1.getText().toString());
                         } else if(det1opcion2.isChecked()){
-                            bio.setBioQ1(det1opcion2.getText().toString());
+                            bio.setAnswerQ1(det1opcion2.getText().toString());
                         }
-                        setArray(bio.getBioQ1());
+                        setArray(bio.getAnswerQ1());
                         break;
 
                     case 1:
                         if(det2opcion1.isChecked()){
-                            bio.setBioQ2(det2opcion1.getText().toString());
+                            bio.setAnswerQ2(det2opcion1.getText().toString());
                         } else if(det2opcion2.isChecked()){
-                            bio.setBioQ2(det2opcion2.getText().toString());
+                            bio.setAnswerQ2(det2opcion2.getText().toString());
                         } else if(det2opcion3.isChecked()){
-                            bio.setBioQ2(det2opcion3.getText().toString());
+                            bio.setAnswerQ2(det2opcion3.getText().toString());
                         }
-                        setArray(bio.getBioQ2());
+                        setArray(bio.getAnswerQ2());
                         break;
 
                     case 2:
                         if(det3opcion1.isChecked()){
-                            bio.setBioQ3(det3opcion1.getText().toString());
+                            bio.setAnswerQ3(det3opcion1.getText().toString());
                         } else if(det3opcion2.isChecked()){
-                            bio.setBioQ3(det3opcion2.getText().toString());
+                            bio.setAnswerQ3(det3opcion2.getText().toString());
                         } else if(det3opcion3.isChecked()){
-                            bio.setBioQ3(det3opcion3.getText().toString());
+                            bio.setAnswerQ3(det3opcion3.getText().toString());
                         }
-                        setArray(bio.getBioQ3());
+                        setArray(bio.getAnswerQ3());
                         break;
 
                     case 3:
                         if(det4opcion1.isChecked()){
-                            bio.setBioQ4(det4opcion1.getText().toString());
+                            bio.setAnswerQ4(det4opcion1.getText().toString());
                         } else if(det4opcion2.isChecked()){
-                            bio.setBioQ4(det4opcion2.getText().toString());
+                            bio.setAnswerQ4(det4opcion2.getText().toString());
                         }
-                        setArray(bio.getBioQ4());
+                        setArray(bio.getAnswerQ4());
                         break;
 
                     case 4:
                         if(!TextUtils.isEmpty(edtDetails5.getText())){
-                            bio.setBioQ5(Float.parseFloat(edtDetails5.getText().toString()));
+                            bio.setAnswerQ5(Float.parseFloat(edtDetails5.getText().toString()));
                         }
-                        setArray(bio.getBioQ5().toString());
+                        setArray(bio.getAnswerQ5().toString());
                         break;
 
                     case 5:
                         if(!TextUtils.isEmpty(edtDetails6.getText())){
-                            bio.setBioQ6(edtDetails6.getText().toString());
+                            bio.setAnswerQ6(edtDetails6.getText().toString());
                         }
-                        setArray(bio.getBioQ6());
+                        setArray(bio.getAnswerQ6());
                         break;
 
                     case 6:
                         if(det7opcion1.isChecked()){
-                            bio.setBioQ7(det7opcion1.getText().toString());
+                            bio.setAnswerQ7(det7opcion1.getText().toString());
                         } else if(det7opcion2.isChecked()){
-                            bio.setBioQ7(det7opcion2.getText().toString());
+                            bio.setAnswerQ7(det7opcion2.getText().toString());
                         }
-                        setArray(bio.getBioQ7());
+                        setArray(bio.getAnswerQ7());
                         break;
 
                     case 7:
                         if(!TextUtils.isEmpty(edtDetails8.getText())){
-                            bio.setBioQ8(edtDetails8.getText().toString());
+                            bio.setAnswerQ8(edtDetails8.getText().toString());
                         }
-                        setArray(bio.getBioQ8());
+                        setArray(bio.getAnswerQ8());
                         break;
 
                 }
