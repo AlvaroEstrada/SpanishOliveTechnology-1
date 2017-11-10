@@ -18,6 +18,22 @@
     <!-- ####################################### STRINGS LOGIN #################################### -->
 
 
+    <string name="LoginDescripcion">Login</string>
+    <string name="txtLoginPresentacion">Esta es la pantalla de Login</string>
+    <string name="edtEmail">Introduce tu email</string>
+    <string name="edtNombre">Introduce tu Nombre</string>
+    <string name="edtTelefono">Introduce tu teléfono</string>
+    <string name="ingles">EN</string>
+    <string name="frances">FR</string>
+    <string name="español">ES</string>
+    <string name="txtRegistroPresentacion">Pagina de Registro</string>
+    <string name="txtRegistroDescripcion">Introduce tus credenciales de registro</string>
+    <string name="edtRepitePassword">Repite tu contraseña</string>
+    <string name="btnRegistro">Registro</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnAtras">Atrás</string>
+    <string name="btnRegistroEnCurso">Acceso</string>
+
     <!-- ####################################### STRINGS PLANTACION #################################### -->
 
 
@@ -98,7 +114,6 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam.
     </string>
-
 
 
     <string name="optionDescription">(Seleccione una opción)</string>

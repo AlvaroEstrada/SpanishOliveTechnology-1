@@ -5,50 +5,123 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <!-- Preguntas Biomasa -->
-    <string name="bioQ1">Gabacho:</string>
-    <string name="bioQ2">Je suis Napoleon:</string>
-    <string name="bioQ3">Tous les Enfants:</string>
-    <string name="bioQ4">Fromage:</string>
-    <string name="bioQ5">Cantidades demandadas/ofertadas(Gabacho):</string>
-    <string name="bioQ6">Pais destino(Gabacho):</string>
-    <string name="bioQ7">Experiencia previa comercio hueso de aceituna/orujo(Gabacho):</string>
-    <string name="bioQ8">Comentarios(Gabacho):</string>
+    <!-- Strings Tools -->
 
-    <!-- Traducciones de botones-->
+    <string name="yes">Si</string>
+    <string name="no">No</string>
 
-    <string name="btnSaveBiomasa">Guardar(Gabacho)</string>
-    <string name="btnNext">Ir a Biomasa(Gabacho)</string>
+    <string name="btnSaveBiomasa">Guardar</string>
+    <string name="btnNext">Ir a Biomasa</string>
+    <string name="btnBack">Volver</string>
+    <string name="btnOptionSave">Guardar  </string>
+
+    <!-- ####################################### STRINGS LOGIN #################################### -->
 
 
-    <!-- Traducciones textView -->
+    <string name="LoginDescripcion">Login</string>
+    <string name="txtLoginPresentacion">Esta es la pantalla de Login</string>
+    <string name="edtEmail">Introduce tu email</string>
+    <string name="edtNombre">Introduce tu Nombre</string>
+    <string name="edtTelefono">Introduce tu teléfono</string>
+    <string name="ingles">EN</string>
+    <string name="frances">FR</string>
+    <string name="español">ES</string>
+    <string name="txtRegistroPresentacion">Pagina de Registro</string>
+    <string name="txtRegistroDescripcion">Introduce tus credenciales de registro</string>
+    <string name="edtRepitePassword">Repite tu contraseña</string>
+    <string name="btnRegistro">Registro</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnAtras">Atrás</string>
+    <string name="btnRegistroEnCurso">Acceso</string>
 
-    <string name="bioQTittle1">Interés(Gabacho)</string>
-    <string name="bioQTittle2">Tipo(Gabacho)</string>
-    <string name="bioQTittle3">Formato(Gabacho)</string>
-    <string name="textView3">Tipo de Consumo(Gabacho)</string>
-    <string name="bioQTittle5">Cantidades(Gabacho)</string>
-    <string name="bioQTittle6">País destino para venta(Gabacho)</string>
-    <string name="bioQTittle7">Experiencia previa comercio Aceituna/Orujo(Gabacho)</string>
-    <string name="bioQTittle8">Comentarios(Gabacho)</string>
+    <!-- ####################################### STRINGS PLANTACION #################################### -->
 
-    <!-- Traducciones RadioButton -->
 
-    <string name="bioQ1Option1">Compra(Gabacho)</string>
-    <string name="bioQ1Option2">Venta(Gabacho)</string>
-    <string name="bioQ2Option1">Hueso de Aceituna(Gabacho)</string>
-    <string name="bioQ2Option2">Palet de Orujo(Gabacho)</string>
-    <string name="bioQ2Option3">Orujillo(Gabacho)</string>
-    <string name="bioQ3Option1">Granel(Gabacho)</string>
-    <string name="bioQ3Option2">BigBag 1000kg(Gabacho)</string>
-    <string name="bioQ3Option3">Sacos 20kg(Gabacho)</string>
-    <string name="bioQ4Option1">Doméstico(Gabacho)</string>
-    <string name="bioQ4Option2">Industrial(Gabacho)</string>
-    <string name="bioQ7Option1">Si(Gabacho)</string>
-    <string name="bioQ7Option2">No(Gabacho)</string>
+    <!-- ####################################### STRINGS ALMAZARA #################################### -->
 
+
+    <!-- ####################################### STRINGS FABRICA ACEITUNA MESA #################################### -->
+
+
+    <!-- ####################################### STRINGS COMERCIO ACEITE DE OLIVA #################################### -->
+
+
+    <!-- ####################################### STRINGS COMERCIO ACEITUNA MESA #################################### -->
+
+
+    <!-- ####################################### STRINGS BIOMASA #################################### -->
+
+    <string name="bioQ1">Interés</string>
+    <string name="bioQ2">Tipo</string>
+    <string name="bioQ3">Formato</string>
+    <string name="bioQ4">Tipo de Consumo</string>
+    <string name="bioQ5">Cantidades demandadas/ofertadas</string>
+    <string name="bioQ6">Pais destino</string>
+    <string name="bioQ7">Experiencia previa comercio hueso de aceituna/orujo</string>
+    <string name="bioQ8">Comentarios</string>
+
+    <string name="bioQTittle1">Interés</string>
+    <string name="bioQTittle2">Tipo</string>
+    <string name="bioQTittle3">Formato</string>
+    <string name="bioQTittle4">Tipo de Consumo</string>
+    <string name="bioQTittle5">Cantidades</string>
+    <string name="bioQTittle6">País destino para venta</string>
+    <string name="bioQTittle7">Experiencia previa comercio Aceituna/Orujo</string>
+    <string name="bioQTittle8">Comentarios</string>
+
+    <string name="bioQ1Option1">Compra</string>
+    <string name="bioQ1Option2">Venta</string>
+    <string name="bioQ2Option1">Hueso de Aceituna</string>
+    <string name="bioQ2Option2">Palet de Orujo</string>
+    <string name="bioQ2Option3">Orujillo</string>
+    <string name="bioQ3Option1">Granel</string>
+    <string name="bioQ3Option2">BigBag 1000kg</string>
+    <string name="bioQ3Option3">Sacos 20kg</string>
+    <string name="bioQ4Option1">Doméstico</string>
+    <string name="bioQ4Option2">Industrial</string>
+    <string name="bioQ7Option1">Si</string>
+    <string name="bioQ7Option2">No</string>
+
+    <string name="bioDescriptionQ1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam.
+    </string>
+    <string name="bioDescriptionQ2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam.
+    </string>
+    <string name="bioDescriptionQ3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam.
+    </string>
+    <string name="bioDescriptionQ4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam.
+    </string>
+    <string name="bioDescriptionQ5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam.
+    </string>
+    <string name="bioDescriptionQ6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam.
+    </string>
+    <string name="bioDescriptionQ7">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam.
+    </string>
+    <string name="bioDescriptionQ8">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam.
+    </string>
+
+
+    <string name="optionDescription">(Seleccione una opción)</string>
+    <string name="optionSubTittleType">(Escriba en el campo de texto)</string>
 
     <!--                                 -->
 
-</resources>
+    <!-- Descripciones de opciones  Biomasa-->
 
+
+</resources>
