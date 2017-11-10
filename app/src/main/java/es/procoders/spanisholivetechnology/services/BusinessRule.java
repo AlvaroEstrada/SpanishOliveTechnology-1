@@ -7,9 +7,8 @@ package es.procoders.spanisholivetechnology.services;
  */
 
 //Interfaz que declara el funcionamiento genérico de una regla de negocio
-public interface BussinessRule {
+interface BusinessRule {
 
-    /**
-     *
-     */
-}
+    Boolean check ();
+
+};

@@ -1,25 +1,24 @@
 package es.procoders.spanisholivetechnology.questions;
 
-import android.text.Layout;
-
 /**
  * Created by Apps on 07/11/2017.
  */
 
-public class Options {
+public class Option {
 
     private String tituloOpcion;
     private boolean required;
+    //TODO: private boolean enabled -> true si está habilitado
     private int layout;
     private String description;
 
-    public Options(String tituloOpcion, boolean required, int layout) {
+    public Option(){
+    }
+
+    public Option(String tituloOpcion, boolean required, int layout) {
         this.tituloOpcion = tituloOpcion;
         this.required = required;
         this.layout = layout;
-    }
-    public Options(){
-
     }
 
     public String getDescription() {
@@ -56,7 +55,7 @@ public class Options {
 
     @Override
     public String toString() {
-        return "Options{" +
+        return "Option{" +
                 "tituloOpcion='" + tituloOpcion + '\'' +
                 '}';
     }
@@ -64,13 +63,13 @@ public class Options {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Options)) return false;
+        if (!(o instanceof Option)) return false;
 
-        Options options = (Options) o;
+        Option option = (Option) o;
 
-        if (required != options.required) return false;
-        if (layout != options.layout) return false;
-        return tituloOpcion != null ? tituloOpcion.equals(options.tituloOpcion) : options.tituloOpcion == null;
+        if (required != option.required) return false;
+        if (layout != option.layout) return false;
+        return tituloOpcion != null ? tituloOpcion.equals(option.tituloOpcion) : option.tituloOpcion == null;
     }
 
     @Override

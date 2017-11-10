@@ -91,7 +91,7 @@
 
 
             <RadioGroup
-                android:id="@+id/GrupoDet7"
+                android:id="@+id/bioQ7RadioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="46dp"
@@ -102,7 +102,7 @@
                 android:showDividers="middle">
 
                 <RadioButton
-                    android:id="@+id/det7opcion1"
+                    android:id="@+id/bioQ7Option1"
                     android:fontFamily="@font/arial"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -117,7 +117,7 @@
                     android:textSize="@dimen/optionRbtnSizeMax" />
 
                 <RadioButton
-                    android:id="@+id/det7opcion2"
+                    android:id="@+id/bioQ7Option2"
                     android:fontFamily="@font/arial"
                     android:layout_width="150dp"
                     android:layout_height="150dp"

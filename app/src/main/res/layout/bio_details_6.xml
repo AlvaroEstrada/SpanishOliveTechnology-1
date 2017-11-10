@@ -99,7 +99,7 @@
                 android:gravity="center_horizontal">
 
                 <EditText
-                    android:id="@+id/edtDetails6"
+                    android:id="@+id/bioQ6Edt"
                     android:layout_width="191dp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"

@@ -16,7 +16,7 @@ import es.procoders.spanisholivetechnology.fragments.BiomasaFragmentMain;
  * @version 1.0
  */
 
-public class BiomasaController {
+public class BiomasaViewController {
 
     private Activity activity;
 
@@ -29,7 +29,7 @@ public class BiomasaController {
      */
 
 
-    public BiomasaController (Activity activity, android.support.v4.app.FragmentManager fmanager){
+    public BiomasaViewController(Activity activity, android.support.v4.app.FragmentManager fmanager){
         this.fmanager = fmanager;
         this.activity = activity;
         callFragment().commit();

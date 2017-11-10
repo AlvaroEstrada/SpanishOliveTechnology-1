@@ -91,7 +91,7 @@
 
 
             <RadioGroup
-                android:id="@+id/GrupoDet4"
+                android:id="@+id/bioQ4RadioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -102,7 +102,7 @@
                 app:layout_constraintVertical_bias="0.548">
 
                 <RadioButton
-                    android:id="@+id/det4opcion1"
+                    android:id="@+id/bioQ4Option1"
                     android:fontFamily="@font/arial"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
                     android:textSize="@dimen/optionRbtnSizeMax" />
 
                 <RadioButton
-                    android:id="@+id/det4opcion2"
+                    android:id="@+id/bioQ4Option2"
                     android:fontFamily="@font/arial"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

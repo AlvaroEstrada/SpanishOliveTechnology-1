@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
 import es.procoders.spanisholivetechnology.R;
-import es.procoders.spanisholivetechnology.controllers.BiomasaController;
 import es.procoders.spanisholivetechnology.controllers.MainController;
 
 /**

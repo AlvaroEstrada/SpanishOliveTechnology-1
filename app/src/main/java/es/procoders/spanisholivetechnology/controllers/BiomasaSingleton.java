@@ -2,10 +2,8 @@ package es.procoders.spanisholivetechnology.controllers;
 
 import java.util.ArrayList;
 
-import es.procoders.spanisholivetechnology.R;
 import es.procoders.spanisholivetechnology.beans.BiomasaBean;
-import es.procoders.spanisholivetechnology.questions.BiomasaQuestions;
-import es.procoders.spanisholivetechnology.questions.Options;
+import es.procoders.spanisholivetechnology.questions.Option;
 
 /**
  * @author Procoders
@@ -13,27 +11,37 @@ import es.procoders.spanisholivetechnology.questions.Options;
  * @version 1.0
  */
 
-public class BiomasaSingleton {
+public class BiomasaSingleton extends SingletonController{
 
-    /**
-     *
-     */
-
-
-    private  static BiomasaSingleton bio;
+    private static BiomasaSingleton instance;
     private int position;
-    private ArrayList<Options> bioQ;
+    private BiomasaBean bean;
+    private ArrayList<Option> optionsList;
 
-    public ArrayList<Options> getBioQ() {
-        return bioQ;
 
+    private BiomasaSingleton() {
     }
 
-    public void setBioQ(ArrayList<Options> arraybioQ) {
-        if (bioQ==null) {
-            this.bioQ = arraybioQ;
+    public static BiomasaSingleton  getInstance() {
+        if(instance == null){
+            instance = new BiomasaSingleton();
         }
+        return instance;
+    }
 
+//    public static void setInstance(BiomasaSingleton instance) {
+//        BiomasaSingleton.instance = instance;
+//    }
+
+    public BiomasaBean getBean() {
+        if (bean ==null){
+            bean = new BiomasaBean();
+        }
+        return bean;
+    }
+
+    public void setBean(BiomasaBean bean) {
+        this.bean = bean;
     }
 
     public int getPosition() {
@@ -41,38 +49,20 @@ public class BiomasaSingleton {
     }
 
     public void setPosition(int i) {
-       this.position = i;
+        this.position = i;
     }
 
-    private BiomasaBean biomasa;
-
-    public static BiomasaSingleton getBio() {
-        return bio;
+    public ArrayList<Option> getOptionsList() {
+        return optionsList;
     }
 
-    public static void setBio(BiomasaSingleton bio) {
-        BiomasaSingleton.bio = bio;
-    }
-
-    public BiomasaBean getBiomasa() {
-        if (biomasa==null){
-            biomasa= new BiomasaBean();
+    public void setOptionsList(ArrayList<Option> arrayList) {
+        if (optionsList ==null) {
+            this.optionsList = arrayList;
         }
-        return biomasa;
     }
 
-    public void setBiomasa(BiomasaBean biomasa) {
-        this.biomasa = biomasa;
-    }
 
-    public BiomasaSingleton() {
-    }
 
-    public static BiomasaSingleton  getInstance() {
-        if(bio == null){
-            bio = new BiomasaSingleton();
-        }
-        return  bio;
-    }
 
 }
